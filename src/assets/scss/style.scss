@@ -1,0 +1,178 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles
+@import "~@coreui/coreui-pro/scss/coreui.scss";
+
+// If you want to add something do it here
+@import "custom";
+
+.card-header:not(.content-center) > .c-icon:first-child {
+  margin-right: 0.1rem;
+  margin-top: 0.1rem;
+  vertical-align: top;
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.list-group .list-group-item-accent-light {
+  border-right: 4px solid #ebedef;
+  border-left:1px solid rgba(0, 0, 21, 0.125);
+}
+
+.list-group .list-group-item-accent-primary {
+  border-right: 4px solid #321fdb;
+  border-left:1px solid rgba(0, 0, 21, 0.125);
+}
+
+.list-group .list-group-item-accent-info {
+  border-right: 4px solid #39f;
+  border-left:1px solid rgba(0, 0, 21, 0.125);
+}
+
+.list-group .list-group-item-accent-danger {
+  border-right: 4px solid #e55353;
+  border-left:1px solid rgba(0, 0, 21, 0.125);
+}
+
+.list-group .list-group-item-accent-success {
+  border-right: 4px solid #2eb85c;
+  border-left:1px solid rgba(0, 0, 21, 0.125);
+}
+
+.list-group .list-group-item-accent-secondary {
+  border-right: 4px solid #ced2d8;
+  border-left:1px solid rgba(0, 0, 21, 0.125);
+}
+
+.list-group .list-group-item-accent-warning {
+  border-right: 4px solid #f9b115;
+  border-left:1px solid rgba(0, 0, 21, 0.125);
+}
+
+.list-group .list-group-item-accent-dark {
+  border-right: 4px solid #636f83;
+  border-left:1px solid rgba(0, 0, 21, 0.125);
+}
+
+.mr-3, .mx-3 {
+  margin-left: 1rem !important;
+  margin-right: 0rem !important;
+}
+
+.ml-auto, .mx-auto {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+.mr-auto, .mx-auto {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+.c-icon[data-v-7983366c] ,.c-icon[data-v-d75b33fc]{
+  margin-left: 0.3rem;
+  margin-right: 0;
+}
+
+.input-group-text {
+  padding: 0rem 0.75rem;
+}
+
+
+.c-sidebar {
+  color: #fff;
+  background: #5e7959;
+}
+
+.c-sidebar .c-sidebar-nav-link:hover, .c-sidebar .c-sidebar-nav-dropdown-toggle:hover {
+    color: #fff;
+    background: #3c6346;
+}
+
+.c-sidebar.c-sidebar-minimized .c-sidebar-nav-item:hover > .c-sidebar-nav-link, .c-sidebar.c-sidebar-minimized .c-sidebar-nav-item:hover > .c-sidebar-nav-dropdown-toggle {
+  background: #405648;
+}
+
+.c-sidebar.c-sidebar-minimized .c-sidebar-nav > .c-sidebar-nav-dropdown > .c-sidebar-nav-dropdown-items {
+  background: #2e4738;
+}
+
+.c-sidebar .c-sidebar-nav-link:hover, .c-sidebar .c-sidebar-nav-dropdown-toggle:hover, .c-sidebar .c-sidebar-nav-dropdown-toggle:hover {
+  color: #fff;
+  background: #42634a;
+}
+
+.c-sidebar.c-sidebar-minimized .c-sidebar-nav > .c-sidebar-nav-dropdown:hover {
+  background: #3d503d;
+}
+
+
+/*
+//rtl styling fix
+.ml-auto, .mx-auto {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+.c-icon[data-v-7983366c] {
+  margin-left: 0.3rem !important;
+}
+
+.mr-3, .mx-3 {
+  margin-right: 0rem !important;
+  margin-left: 1rem !important;
+}
+
+.ml-2, .mx-2 {
+  margin-right: 0.5rem !important;
+  margin-left: 0 !important;
+}
+
+.navbar-nav {
+  margin-right: auto !important;
+}
+
+.input-group-append >.btn{
+  margin: 0px;
+}
+
+.modal-footer{
+  direction: ltr;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto #eee;
+}
+*/
+
+
+//overwrite classes in _avatars.scss coreui-pro/scss folder
+//start
+// .c-avatars-stack {
+//   display: flex;
+//   @include avatar($avatar-width,$avatar-status-width);
+//   .c-avatar {
+//     margin-left: - ($avatar-width / 2);
+//     transition: margin-left $layout-transition-speed;
+
+//     &:hover {
+//       margin-left: 0;
+//     }
+//   }
+
+//   .c-avatar-sm {
+//     margin-left: - ($avatar-sm-width / 2);
+//   }
+
+//   .c-avatar-lg {
+//     margin-left: - ($avatar-lg-width / 2);
+//   }
+
+//   .c-avatar-xl {
+//     margin-left: - ($avatar-xl-width / 2);
+//   }
+// }
+//end
