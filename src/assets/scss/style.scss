@@ -108,6 +108,26 @@
   background: #3d503d;
 }
 
+.custom-control-input:checked~.custom-control-label:before {
+  color: #fff;
+  border-color: #0f7036;
+  background-color: #0f7036;
+}
+
+.custom-checkbox.b-custom-control-lg, .input-group-lg .custom-checkbox {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  padding-right: 1.875rem;
+  padding-left: 0 !important;
+}
+
+.c-header-nav,.c-header{
+  min-height: 36px !important;
+}
+
+.c-sidebar .nav-tabs:first-child .nav-link, .c-sidebar .c-sidebar-close + .nav-tabs .nav-link{
+  height: 37px !important;
+}
 
 /*
 //rtl styling fix

@@ -1,7 +1,7 @@
 <template>
   <CDropdown
     inNav
-    class="c-header-nav-items  mr-2"
+    class="c-header-nav-items mr-2"
     placement="bottom-end"
     add-menu-classes="pt-0"
   >
@@ -10,7 +10,7 @@
         <div class="c-avatar">
           <img
             src="img/avatars/6.jpg"
-            class="c-avatar-img "
+            class="c-avatar-img w-75"
           />
         </div>
       </CHeaderNavLink>

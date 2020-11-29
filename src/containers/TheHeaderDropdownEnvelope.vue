@@ -1,7 +1,7 @@
 <template>
   <CDropdown
     inNav
-    class="c-header-nav-items mr-3"
+    class="c-header-nav-items mr-2 mt-2"
     placement="bottom-end"
     add-menu-classes="pt-0"
   >

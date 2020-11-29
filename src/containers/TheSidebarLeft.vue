@@ -12,7 +12,7 @@
       class="nav-underline nav-underline-primary"
     >
       <CTab active>
-        <template slot="title">
+        <template slot="title" class="h-50">
           <CIcon name="cil-calculator" />
         </template>
         <CListGroup class="list-group-accent">
@@ -386,6 +386,7 @@
 
     <CSidebarClose
       class="c-sidebar-close"
+      style="height:37px !important"
       aria-label="Close"
       @click.native="$store.commit('set', ['sidebarLeftShow', !show])"
     />

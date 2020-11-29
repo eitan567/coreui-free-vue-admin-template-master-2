@@ -43,19 +43,27 @@
     <CSubheader class="px-3 pt-3">
       <CContainer fluid>
         <form>
-          <div class="form-group row mb-0">
-            <CSwitch size="sm"
+          <div class="form-group row  mb-0">    
+            <b-form-checkbox
+            id="checkbox-1"
+            v-model="usernameSwitch"
+            name="checkbox-1"
+            size="lg"              
+            class="success" 
+          />               
+            <!-- <CSwitch size="sm"
                       sm="3"
                       class="mx-2 pt-1"
-                      color="success"
-                      checked
+                      color="success"                                            
                       shape="pill"
-                      v-bind="labelIcon"
-                      for="inputEmail3"              
-                    />  
+                      :checked="usernameSwitch"
+                      v-bind="labelTxt"                      
+                      for="inputEmail3"   
+                      ref="Username_Switch"           
+                    />   -->
             <CInput
                       sm="9"
-                      placeholder="Username"
+                      placeholder="Username test"
                       ref="Username"
                       v-model="username"
                     >                    
@@ -71,9 +79,9 @@
                     />  
             <CInput
                       sm="9"
-                      placeholder="Username"
-                      ref="Username"
-                      v-model="username"
+                      placeholder="Username1"
+                      ref="Username1"
+                      v-model="username1"
                     >                    
             </CInput>
             <CSwitch size="sm"
@@ -87,9 +95,9 @@
                     />  
             <CInput
                       sm="9"
-                      placeholder="Username"
-                      ref="Username"
-                      v-model="username"
+                      placeholder="Username2"
+                      ref="Username2"
+                      v-model="username2"
                     >                    
             </CInput>
             <CSwitch size="sm"
@@ -103,9 +111,9 @@
                     />  
             <CInput
                       sm="9"
-                      placeholder="Username"
-                      ref="Username"
-                      v-model="username"
+                      placeholder="Username3"
+                      ref="Username3"
+                      v-model="username3"
                     >                    
             </CInput> 
             <CSwitch size="sm"
@@ -119,9 +127,9 @@
                     />  
             <CInput
                       sm="9"
-                      placeholder="Username"
-                      ref="Username"
-                      v-model="username"
+                      placeholder="Username4"
+                      ref="Username4"
+                      v-model="username4"
                     >                    
             </CInput>    
           </div>
@@ -137,9 +145,9 @@
                     />  
             <CInput
                       sm="9"
-                      placeholder="Username"
-                      ref="Username"
-                      v-model="username"
+                      placeholder="Username5"
+                      ref="Username5"
+                      v-model="username5"
                     >                    
             </CInput>
             <CSwitch size="sm"
@@ -153,9 +161,9 @@
                     />  
             <CInput
                       sm="9"
-                      placeholder="Username"
-                      ref="Username"
-                      v-model="username"
+                      placeholder="Username6"
+                      ref="Username6"
+                      v-model="username6"
                     >                    
             </CInput>
             <CSwitch size="sm"
@@ -169,9 +177,9 @@
                     />  
             <CInput
                       sm="9"
-                      placeholder="Username"
-                      ref="Username"
-                      v-model="username"
+                      placeholder="Username7"
+                      ref="Username7"
+                      v-model="username7"
                     >                    
             </CInput>
             <CSwitch size="sm"
@@ -185,9 +193,9 @@
                     />  
             <CInput
                       sm="9"
-                      placeholder="Username"
-                      ref="Username"
-                      v-model="username"
+                      placeholder="Username8"
+                      ref="Username8"
+                      v-model="username8"
                     >                    
             </CInput> 
             <CSwitch size="sm"
@@ -201,9 +209,9 @@
                     />  
             <CInput
                       sm="9"
-                      placeholder="Username"
-                      ref="Username"
-                      v-model="username"
+                      placeholder="Username9"
+                      ref="Username9"
+                      v-model="username9"
                     >                    
             </CInput>
             <div class="btn-group">
@@ -235,7 +243,17 @@ export default {
   data() {
     return {
       username: "",
-      usernameSwitch: false,
+      username1: "",
+      username2: "",
+      username3: "",
+      username4: "",
+      username5: "",
+      username6: "",
+      username7: "",
+      username8: "",
+      username9: "",
+      username10: "",
+      usernameSwitch: true,
       labelIcon: {
         labelOn: "\u2713",
         labelOff: "\u2715",
@@ -250,15 +268,16 @@ export default {
     CTheHeaderDropdownAccnt,
     CTheHeaderDropdownEnvelope,
     CTheHeaderDropdownAlerts,
-    CTheHeaderDropdownTasks,
+    CTheHeaderDropdownTasks
   },
   methods: {
     myAlert: function () {
-      alert(this.username + " " + this.$refs.Username_switch.state);
+      //alert(this.username + " " + this.$refs.Username_Switch.state);
+      alert(1);
     },
     changed: function (event) {
       alert("changed" + event);
-    },
+    }
   },
 };
 </script>

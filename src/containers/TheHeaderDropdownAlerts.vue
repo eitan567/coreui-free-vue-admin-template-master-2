@@ -1,7 +1,7 @@
 <template>
   <CDropdown
     inNav    
-    class="c-header-nav-items"    
+    class="c-header-nav-items mt-2"    
     add-menu-classes="pt-0"
   >    
     <template #toggler>
